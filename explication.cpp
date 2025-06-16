@@ -2,7 +2,7 @@
 using namespace std;
 // Se puede poner dentro del parentesis
 float suma(float n1, float n2);
-float resta(float n1,float n2);
+float resta(float n1, float n2);
 float multy(float n1, float n2);
 float div(float n1, float n2);
 
@@ -23,44 +23,42 @@ int main(void)
         mostrarOpciones();
         cin >> op;
 
-        
-
         switch (op)
         {
         case 1:
-            
+
             cout << "Ingrese los numeros a operar" << endl;
             cin >> num1 >> num2;
-            cout << "El resultado de la suma es:" << suma(num1, num2)<<endl; 
+            cout << "El resultado de la suma es:" << suma(num1, num2) << endl;
             break;
 
         case 2:
-            
+
             cout << "Ingrese los numeros a operar" << endl;
             cin >> num1 >> num2;
-            cout << "El resultado de la resta es:" << resta(num1, num2)<<endl;
-             break;
+            cout << "El resultado de la resta es:" << resta(num1, num2) << endl;
+            break;
 
         case 3:
-            
+
             cout << "Ingrese los numeros a operar" << endl;
             cin >> num1 >> num2;
-            cout << "El resultado de la  multiplicacion es:" << multy(num1, num2)<<endl;
-             break;
+            cout << "El resultado de la  multiplicacion es:" << multy(num1, num2) << endl;
+            break;
 
         case 4:
-            
+
             cout << "Ingrese los numeros a operar" << endl;
             cin >> num1 >> num2;
-            cout << "El resultado de la division es:" << div(num1, num2)<<endl;
-             break;
+            cout << "El resultado de la division es:" << div(num1, num2) << endl;
+            break;
 
         case 5:
-            cout << "Saliendo..."<<endl;
-             break;
+            cout << "Saliendo..." << endl;
+            break;
 
         default:
-            cout<<"Por favor ingrese digitos validos"<<endl;
+            cout << "Por favor ingrese digitos validos" << endl;
             break;
         }
     } while (op != 5);
